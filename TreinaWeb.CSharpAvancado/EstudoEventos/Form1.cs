@@ -19,13 +19,7 @@ namespace EstudoEventos
             _gerenciadorLatidos = new GerenciadorLatidos();
             //Adicionando assinantes ao evento
             _gerenciadorLatidos.ExcessoDecibeisEvent += QuandoExcederDecibeis;
-            //_gerenciadorLatidos.ExcessoDecibeisEvent += QuandoExcederDecibeisDeNovo; //Ao invés de fazer dessa forma, podemos usar um método anônimo
-            //Usando lambda podemos fazer um método anônimo para fazer o que o método QuandoExcederDecibeisDeNovo fazia
-            //Lembrando que delegates events sempre recebem um object "sender" e o argumento do evento "args"
-            _gerenciadorLatidos.ExcessoDecibeisEvent += (sender, args) =>
-            {
-                MessageBox.Show("Você acabou de levar uma multa.", "Excesso de decibéis", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            };
+            _gerenciadorLatidos.ExcessoDecibeisEvent += QuandoExcederDecibeisDeNovo;
         }
 
         private void frmGerenciadorLatidosCachorros_Load(object sender, EventArgs e)
@@ -46,10 +40,11 @@ namespace EstudoEventos
             MessageBox.Show(string.Format("O cachorro passou dos limites, com {0} decibéis.", eventArgs.IntensidadeLatidos), "Excesso de decibéis", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        //private void QuandoExcederDecibeisDeNovo(object sender, EventArgs e)
-        //{
-        //    MessageBox.Show("Você acabou de levar uma multa.", "Excesso de decibéis", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //}
+        //a assinatura do método tem que bater com a do delegete event (retorno sempre void e recebem um object e os argumentos dos eventos
+        private void QuandoExcederDecibeisDeNovo(object sender, EventArgs e)
+        {
+            MessageBox.Show("Você acabou de levar uma multa.", "Excesso de decibéis", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
 
         private void btnReiniciar_Click(object sender, EventArgs e)
         {
