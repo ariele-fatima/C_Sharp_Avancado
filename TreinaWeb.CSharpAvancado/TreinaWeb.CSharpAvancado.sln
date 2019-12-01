@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstudoEventos", "EstudoEven
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressoesLambda", "ExpressoesLambda\ExpressoesLambda.csproj", "{AA86ADB4-FC2C-48E6-BD0A-D90EF6E116FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodosExtensao", "MetodosExtensao\MetodosExtensao.csproj", "{4E811D09-C03C-4BA9-B3BD-AD762ED0C845}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetodosExtensao", "MetodosExtensao\MetodosExtensao.csproj", "{4E811D09-C03C-4BA9-B3BD-AD762ED0C845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstudoLINQ", "EstudoLINQ\EstudoLINQ.csproj", "{F7507C98-F6EB-4F7F-9451-139820EBC369}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{4E811D09-C03C-4BA9-B3BD-AD762ED0C845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E811D09-C03C-4BA9-B3BD-AD762ED0C845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E811D09-C03C-4BA9-B3BD-AD762ED0C845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7507C98-F6EB-4F7F-9451-139820EBC369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7507C98-F6EB-4F7F-9451-139820EBC369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7507C98-F6EB-4F7F-9451-139820EBC369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7507C98-F6EB-4F7F-9451-139820EBC369}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
